@@ -6,13 +6,15 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({ width: 800, height: 600 })
+  // Default height was 600. Setting 400 as desired.
+  win = new BrowserWindow({ width: 800, height: 400 })
 
   // and load the index.html of the app.
   win.loadFile('index.html')
 
-  // Open the DevTools.
-  win.webContents.openDevTools()
+  // Open the DevTools. DEFAULT SETTING
+  // Turning off for now
+  //win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
