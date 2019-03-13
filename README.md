@@ -1,3 +1,8 @@
-GoingLive
+## GoingLive
 
-Purpose of app is to allow easy twitter posts when livestreaming
+#### Purpose of app is to allow easy twitter posts when livestreaming
+
+* [ ] Twitter api
+* [ ] Twitch api
+* [ ] Nicer html
+    * [ ] Bootstrap?
