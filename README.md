@@ -5,7 +5,7 @@
 * [ ] Twitch api
 * [ ] Nicer html
     * [ ] Bootstrap?
-        * [ ] get jquery
+        * [x] get jquery
         * [x] get popper
 
 
