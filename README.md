@@ -6,7 +6,7 @@
 * [ ] Nicer html
     * [ ] Bootstrap?
         * [ ] get jquery
-        * [ ] get popper
+        * [x] get popper
 
 
 ### Design
