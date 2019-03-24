@@ -9,6 +9,8 @@ function createWindow () {
   // Default height was 600. Setting 400 as desired.
   win = new BrowserWindow({ width: 800, height: 400 })
 
+  win.setMenu(null)
+
   // and load the index.html of the app.
   win.loadFile('index.html')
 
