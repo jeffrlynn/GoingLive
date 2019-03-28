@@ -31,6 +31,7 @@ a, a:hover, a:focus {
   background: #7386D5;
   color: #fff;
   transition: all 0.3s;
+  margin-left: -250px;
 }
 
 #sidebar .sidebar-header {
@@ -70,7 +71,7 @@ ul ul a {
 }
 
 #sidebar.active {
-  margin-left: -250px;
+  margin-left: 0px;
 }
 
 a[data-toggle="collapse"] {
@@ -83,4 +84,37 @@ a[data-toggle="collapse"] {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  #sidebar-active {
+    margin-left: 0;
+  }
+}
+
+#tweetBoxes {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#defaultTweet {
+  width: auto;
+  background-color: #999;
+}
+
+#customTweet {
+  width: auto;
+  background-color: #999;
+}
+
+* :not(path):not(g) {
+  color: hsla(210, 100%, 100%, 0.9) !important;
+  background: hsla(210, 100%, 50%, 0.5) !important;
+  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+  box-shadow: none !important;
 }

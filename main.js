@@ -1,3 +1,5 @@
+const path = require('path')
+const glob = require('glob')
 const { app, BrowserWindow } = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
