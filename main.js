@@ -7,7 +7,7 @@ let win
 function createWindow () {
   // Create the browser window.
   // Default height was 600. Setting 400 as desired.
-  win = new BrowserWindow({ width: 800, height: 400 })
+  win = new BrowserWindow({width: 800, height: 400})
 
   // Disable default menu bar
   win.setMenu(null)
@@ -49,6 +49,3 @@ app.on('activate', () => {
     createWindow()
   }
 })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
