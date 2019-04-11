@@ -1,13 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Initialize jQuery onLoad -->
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Going Live</title>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+    </style>
+    <!-- Custom styles -->
+    <link href="goinglive.css" rel="stylesheet">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+
+        $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+        });
+
+      });
+    </script>
+
   </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+
+  <body cz-shortcut-listen="true">
+    <div class = "wrapper">
+      <!-- Sidebar -->
+      <nav id = "sidebar">
+        <ul class = "list-unstyled components">
+          <p>Settings</p>
+          <!-- Accounts Dropdown -->
+          <li class="active">
+            <a href="#accountSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Accounts</a>
+            <ul class="collapse list-unstyled" id="accountSubmenu">
+              <!-- Twitter account form -->
+              <form>
+                <span>Placeholder text</span>
+              </form>
+              <!-- Twitch account form -->
+              <form>
+                <span>Placeholder text</span>
+              </form>
+            </ul>
+          </li>
+          <!-- Tweets Dropdown -->
+          <li class="active">
+            <a href="#tweetSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tweets</a>
+            <ul class="collapse list-unstyled" id="tweetSubmenu">
+              <!-- Default tweet form -->
+              <form>
+                <span>Placeholder text</span>
+              </form>
+              <!-- Custom tweet form -->
+              <form>
+                <span>Placeholder text</span>
+              </form>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div id = "content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-cog"></i>
+            </button>
+          </div>
+        </nav>
+        <div id="tweetBoxes">
+          <div id="defaultTweet" class="container-fluid">
+            <h2>Fluid container</h2>
+            <ul>
+              <li>Has a fluid width, which stretches to 100% of its parent element</li>
+              <li>Has a built-in padding of 15px all the way around</li>
+            </ul>
+          </div>
+          <div id="customTweet" class="container-fluid">
+              <h2>Fluid container</h2>
+              <ul>
+                <li>Has a fluid width, which stretches to 100% of its parent element</li>
+                <li>Has a built-in padding of 15px all the way around</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Optional Javascript -->
+    <!-- jQuery first, then Popper.js, then Boostrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

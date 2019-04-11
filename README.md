@@ -4,11 +4,18 @@
 * [ ] Twitter api
 * [ ] Twitch api
 * [ ] Nicer html
-    * [ ] Bootstrap?
+    * [x] Bootstrap?
+        * [x] get jquery
+        * [x] get popper
 
 
 ### Design
-* [ ] Find a webpage design tool
+* [ ] Pages
+    * [ ] Main (where tweet is sent)
+        * [ ] Boxes for default and custom send
+    * [ ] Twitter and Twitch account links
+    * [ ] Default and Custom tweet setup
+
 Two options on interface:
 1. Send default message that includes stream title and game (design picture in PS)
 2. Send custom message that user can type
