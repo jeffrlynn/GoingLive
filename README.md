@@ -7,6 +7,9 @@
     * [x] Bootstrap?
         * [x] get jquery
         * [x] get popper
+* [ ] Free hosting with heroku?
+    - Doesn't work with Electron
+* [ ] Using Github personal page as link for twitter app
 
 
 ### Design
