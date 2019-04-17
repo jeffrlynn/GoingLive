@@ -1,8 +1,11 @@
-var Twit = require('twitter');
+// Import twitter package
+var Twitter = require('twitter');
 
+// Import the config (contains keys and tokens)
 var config = require('./config')
 
-var T = new Twit(config);
+// Twitter object that will call functions
+var T = new Twitter(config);
 
 var tweet = {
 
